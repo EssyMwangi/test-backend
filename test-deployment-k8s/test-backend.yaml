@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: test-backend
+  name: test-backend
+  namespace: backend
+spec:
+  selector:
+    matchLabels:
+      app: test-backend
+  template:
+    metadata:
+      labels:
+        app: test-backend
+    spec:
+      containers:
+      - name: test-backend
+        image: 070171898207.dkr.ecr.eu-west-1.amazonaws.com/test-backend:latest
+        ports:
+        - containerPort: 8080
+        imagePullPolicy: Always
+        env:
+        - name: SPRING_DATASOURCE_URL
+          value: jdbc:mysql://ess-test-deployment-db.cimey6e98ihc.eu-west-1.rds.amazonaws.com:3306/hobbie_backend_db?allowPublicKeyRetrieval=true&useSSL=true&serverTimezone=Europe/Paris
+        - name: SPRING_DATASOURCE_USERNAME
+          value: hobbie_backend
+        - name: SPRING_DATASOURCE_PASSWORD
+          value: Monica/19

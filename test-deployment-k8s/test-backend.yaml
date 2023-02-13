@@ -24,6 +24,6 @@ spec:
         - name: SPRING_DATASOURCE_URL
           value: jdbc:mysql://ess-test-deployment-db.cimey6e98ihc.eu-west-1.rds.amazonaws.com:3306/hobbie_backend_db?allowPublicKeyRetrieval=true&useSSL=true&serverTimezone=Europe/Paris
         - name: SPRING_DATASOURCE_USERNAME
-          value: hobbie_backend
+          value: admin
         - name: SPRING_DATASOURCE_PASSWORD
-          value: Monica/19
+          value: hzGA$x2UmTTev*dHZufUQGe31$7.

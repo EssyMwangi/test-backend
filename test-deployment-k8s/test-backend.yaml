@@ -26,4 +26,4 @@ spec:
         - name: SPRING_DATASOURCE_USERNAME
           value: hobbie_backend
         - name: SPRING_DATASOURCE_PASSWORD
-          value: Monica/19
+          value: <your-db-password>
